@@ -1,0 +1,30 @@
+<h3>Botones normales</h3>
+<div>
+    <button mat-button>Basico</button>
+    <button mat-button color="primary">Primario Basico</button>
+</div>
+
+<h3>Botones con elevación</h3>
+<div>
+    <button mat-raised-button [disabled]="formulario.valido"> Basico </button>
+    <button mat-raised-button color="primary" [disabled]="!formulario.valido"> Primario Basico </button>
+</div>
+
+<h3>Botones con íconos</h3>
+<div>
+    <button mat-icon-button (click)="onClick($event)"> 
+        <mat-icon>grade</mat-icon>
+    </button>
+    <button mat-icon-button color="primary"> 
+        <mat-icon>photo_camera</mat-icon>    
+    </button>
+</div>
+
+<h3>Botones con acción flotante (FAB)</h3>
+<div>
+    <button mat-fab (click)="onClick($event)"> Basico </button>
+    <button mat-fab color="primary"> Primario Basico </button>
+    <button mat-fab> 
+        <mat-icon>picture_as_pdf</mat-icon>    
+    </button>
+</div>

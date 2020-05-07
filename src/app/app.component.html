@@ -1,0 +1,25 @@
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+        <button mat-icon-button>
+      <mat-icon>menu</mat-icon>
+    </button>
+        <span>Angular desde cero</span>
+        <span class="example-spacer"></span>
+    </mat-toolbar-row>
+</mat-toolbar>
+
+<nav>
+    <a>
+        <button mat-button color="primary" [routerLink]="'/home'">Inicio</button>
+    </a>
+
+    <a>
+        <button mat-button color="primary" [routerLink]="'/material-demo'">Material Demo</button>
+    </a>
+
+    <a>
+        <button mat-button color="primary" [routerLink]="'/mars'">Mars</button>
+    </a>
+</nav>
+
+<router-outlet></router-outlet>
